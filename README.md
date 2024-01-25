@@ -1,8 +1,9 @@
 # Overview
 
-This is a prototype of an event organization application so anyone can create and host meetings and events.  It is a zkApp written on the Mina blockchain.  It is designed for 3 users: event attendees, event organizers, and venue owner/manager/promoters.  Yes, we openly would love to destroy the existing ecoystem of how events get organized by billionaire companies, and let people manage their fees, let organizers and proters keep more control, and enable some new use cases that only blockchain can support.  Nope, it's not for doing e-commerce at this point, just a concept for creating events, checking in at events, verifying identity of the event ticket holder, and managing historical data around events.
+This is a prototype of an event organization application so anyone can create and host meetings and events.  Behind the scenes it uses one of the following blockchains Cosmos / Polygon / Mina.  The first version probably won't be infrastructure-free.  Likely AWS Lambda will serve somewhere support off-chain functions.  It is designed for 3 users: event attendees, event organizers, and venue owner/manager/promoters.  Yes, we openly would love to destroy the existing ecoystem of how events get organized by billionaire companies, and let people manage their fees, let organizers and proters keep more control, and enable some new use cases that only blockchain can support.  Nope, it's not for doing e-commerce at this point, just a concept for creating events, checking in at events, verifying identity of the event ticket holder, and managing historical data around events.
 
 - rev1 : 9/24/2022 original document
+- rev2 : 1/25/2024 update to milestones and overview.
 
 ## Definitions
 
@@ -18,12 +19,18 @@ This is a prototype of an event organization application so anyone can create an
 - date
 - capacity
 - seating capacity
+- service fee
+- event type (open public / open secret / private public / private secret )
+- entry requirements (external ticket / evento ticket / none / external form / evento form)
+- guest list 
+- attendee list
+- attendee type ( paid / guest / group member ) 
 
 ## References
 
 - Web App Figma UI spec : TODO
 - Prototype FSD: N/A ... this is the description in this document
-- Mina Protocol spec: TBD
+- Blockchain Protocol spec: TBD
 - zkApps spec: TBD
  
 ## Platform Requirements
@@ -63,12 +70,9 @@ TODO: Finish this section below
     - 1.6.1 The app about menu shows the app version and build information, and app logo
 
 
-
-
-
 ## Milestone II Requirements
 
-Highlights for this release:
+Highlights for this release: Flutter based application ideally.
 
 * App runs on Android
 * App runs on iOS
@@ -77,6 +81,12 @@ Highlights for this release:
 
 Highlights for this release:
 
-* Decentralized
+* Decentralized minus offchain infrastructure.
 * Available in App Stores
 
+## Milestone IV Requirements:
+
+Highlights for this release:
+
+* In app monetization features using blockchain
+* In app transactions related to tokens
